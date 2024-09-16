@@ -1,0 +1,41 @@
+.carrosel {
+  line-height: 8em;
+  margin: 3em;
+
+}
+
+.carousel {
+  width: 50%;
+  margin: auto;
+  line-height: 8em;
+}
+
+.carousel-inner {
+  line-height: 8em;
+}
+
+
+
+#Isso {
+  font-family: "Kite One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+
+.Palavras {
+  font-family: "Kite One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  width: 85%;
+  height: 80%;
+  margin: 5.5em
+}
+
+#Texto {
+  margin: auto;
+  width: 80%;
+  font-size: 1.5em;
+
+}
