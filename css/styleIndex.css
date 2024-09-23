@@ -1,0 +1,50 @@
+.carrosel_div{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#i2,#i3{
+  display: none;
+}
+
+.img_car{
+  width: 70em;
+  height: 20em;
+  background-size: cover;
+}
+
+
+.passar_img{
+  width: 4em;
+  height: 4em;
+  border: 0;
+  background-color: rgba(240, 248, 255, 0);
+  cursor: pointer;
+}
+
+
+#Isso {
+  font-family: "Kite One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+
+.Palavras {
+  font-family: "Kite One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  width: 85%;
+  height: 80%;
+  margin: 5.5em
+}
+
+#Texto {
+  margin: auto;
+  width: 80%;
+  font-size: 1.5em;
+
+}
