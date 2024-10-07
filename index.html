@@ -1,106 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EducaTest</title>
+    <link rel="stylesheet" href="css/styleAll.css" />
+    <link rel="stylesheet" href="css/styleIndex.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EducaTest</title>
-  <link rel="stylesheet" href="css/styleAll.css">
-  <link rel="stylesheet" href="css/styleIndex.css">
-</head>
-
-<body>
-
-
-  <header>
-
-    <section class="Menu">
-
-      <div id="logo">
-        <img src="img/logo.png" alt="" class="imag">
-        <div class="site-name">
-          <span class="educa">EDUCA</span><span class="test">TEST</span>
+  <body>
+    <header>
+      <section class="Menu">
+        <div id="logo">
+          <img src="img/logo.png" alt="" class="imag" />
+          <div class="rowdies-bold site-name">
+            <span class="educa">EDUCA</span><span class="test">TEST</span>
+          </div>
         </div>
 
-      </div>
+        <nav class="nav-links">
+          <ul>
+            <li><a href="quemSomos.html">Quem somos</a></li>
+            <li><a href="login.html">Entrar / Cadastrar</a></li>
+          </ul>
+        </nav>
+      </section>
 
-      <nav class="nav-links">
-        <ul>
-          <li><a href="quemSomos.html">Quem somos</a></li>
-          <li><a href="login.html">Entrar / Cadastrar</a></li>
-        </ul>
-      </nav>
+      <section class="carrosel">
+        <div class="carrosel_div">
+          <img src="img/carrosel_img1.jpg" alt="" id="i1" class="img_car" />
+          <img src="img/carrosel_img2.jpg" alt="" id="i2" class="img_car" />
+          <img src="img/carrosel_img3.jpg" alt="" id="i3" class="img_car" />
+        </div>
 
-    </section>
+        <button class="passar_img" id="later">
+          <img src="img/caret-left-fill.svg" alt="" class="passar_img" />
+        </button>
 
-    <section class="carrosel">
+        <button class="passar_img" id="next">
+          <img src="img/caret-right-fill.svg" alt="" class="passar_img" />
+        </button>
+      </section>
+    </header>
 
-      <div class="carrosel_div">
-        <img src="img/carrosel_img1.jpg" alt="" id = "i1" class="img_car">
-        <img src="img/carrosel_img2.jpg" alt="" id = "i2" class="img_car">
-        <img src="img/carrosel_img3.jpg" alt="" id = "i3" class="img_car">
-      </div>
-           
-      <button class="passar_img" id="later">
-        <img src="img/passar_e.png" alt="" class="passar_img">
-      </button>
+    <main>
+      <h1 id="Isso">Bem-Vindos!</h1>
 
-      <button class="passar_img" id="next">
-        <img src="img/passar_d.png" alt="" class="passar_img">
-      </button>
+      <section class="Palavras kite-one-regular">
+        <div id="Texto">
+          Saudações estudantes! Nós, alunos do IFES Campus de Alegre, temos uma
+          proposta de ajudá-los através deste site auxiliar preparatório com o
+          objetivo de fornecer a vocês uma ferramenta eficaz para treinar seus
+          conhecimentos, utilizando provas anteriores e questões direcionadas de
+          cada matéria. Queremos que vocês tenham a oportunidade de se
+          familiarizar com o formato e o tipo de questões que costumam ser
+          cobradas nos exames. Com isso, esperamos que vocês possam ter uma
+          visão mais clara de como o conteúdo é cobrado e se sintam mais
+          preparados para enfrentar os desafios acadêmicos. <br />
+          Nossa equipe está comprometida em tornar sua experiência de
+          aprendizado mais enriquecedora e eficiente. Por isso, incentivamos que
+          vocês utilizem todos os recursos disponíveis no site e aproveitem ao
+          máximo o material que preparamos com tanto cuidado.  <br />
+          Estamos aqui para apoiar vocês nessa jornada e desejamos muito sucesso
+          nos seus estudos. Boa sorte e bons estudos!
+        </div>
+      </section>
+    </main>
 
-
-
-    </section>
-
-  </header>
-
-  <main>
-
-    <h1 id="Isso">Bem-Vindos!</h1>
-
-    <section class="Palavras">
-      <div id="Texto">
-        Saudações estudantes! Nós, alunos do IFES Campus de Alegre, temos uma proposta de ajudá-los através deste
-        site auxiliar preparatório com o objetivo de fornecer a vocês uma ferramenta eficaz para treinar seus
-        conhecimentos, utilizando provas anteriores e questões direcionadas de cada matéria. Queremos que vocês
-        tenham a oportunidade de se familiarizar com o formato e o tipo de questões que costumam ser cobradas nos
-        exames. Com isso, esperamos que vocês possam ter uma visão mais clara de como o conteúdo é cobrado e se
-        sintam mais preparados para enfrentar os desafios acadêmicos. <br>
-        Nossa equipe está comprometida em tornar sua experiência de aprendizado mais enriquecedora e eficiente. Por
-        isso, incentivamos que vocês utilizem todos os recursos disponíveis no site e aproveitem ao máximo o
-        material que preparamos com tanto cuidado.  <br>
-        Estamos aqui para apoiar vocês nessa jornada e desejamos muito sucesso nos seus estudos. Boa sorte e bons
-        estudos!
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="Rodape">
-    <section class="Baixo">
-
+    <footer class="Rodape">
+      <section class="Baixo">
         <div id="contatos">
-            Contatos:
-            <ul>
-                <li>projetoeducateste@gmail.com</li>
-            </ul>
+          Contatos:
+          <ul>
+            <li>projetoeducateste@gmail.com</li>
+          </ul>
         </div>
 
         <div id="Copy">
-            Copyright:
-            <ul>
-                <li>Ana Clara Silva Schunk</li>
-                <li>Kauã Soares Madeira</li>
-                <li>Thales Dias Milagre</li>
-            </ul>
+          Copyright:
+          <ul>
+            <li>Ana Clara Silva Schunk</li>
+            <li>Kauã Soares Madeira</li>
+            <li>Thales Dias Milagre</li>
+          </ul>
         </div>
+      </section>
 
-    </section>
-
-  <script src="js/main.js"></script>
-</footer>
-
-</body>
-
+      <script src="js/main.js"></script>
+    </footer>
+  </body>
 </html>

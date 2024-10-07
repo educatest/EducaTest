@@ -1,8 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Kite+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rowdies:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kite+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kite+One&family=Rowdies&display=swap');
+
+.rowdies-bold {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.kite-one-regular {
+  font-family: "Kite One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 body {
     margin: 0;
@@ -31,12 +42,8 @@ body {
 }
 
 .site-name {
-  font-family: "Rowdies", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 60px;
   margin-left: .5em;
-  font-weight: bold;
 }
 
 .site-name .educa {
