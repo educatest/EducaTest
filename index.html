@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,26 +25,45 @@
           </ul>
         </nav>
       </section>
-
-      <section class="carrosel">
-        <div class="carrosel_div">
-          <img src="img/carrosel_img1.jpg" alt="" id="i1" class="img_car" />
-          <img src="img/carrosel_img2.jpg" alt="" id="i2" class="img_car" />
-          <img src="img/carrosel_img3.jpg" alt="" id="i3" class="img_car" />
-        </div>
-
-        <button class="passar_img" id="later">
-          <img src="img/caret-left-fill.svg" alt="" class="passar_img" />
-        </button>
-
-        <button class="passar_img" id="next">
-          <img src="img/caret-right-fill.svg" alt="" class="passar_img" />
-        </button>
-      </section>
     </header>
 
+    <!--slider-->
     <main>
-      <h1 id="Isso">Bem-Vindos!</h1>
+      <section class="carrosel">
+        <div class="carrosel_content">
+          <input type="radio" name="btn_radio" id="radio1" />
+          <input type="radio" name="btn_radio" id="radio2" />
+          <input type="radio" name="btn_radio" id="radio3" />
+
+          <div class="carrosel_imgs primeiro">
+            <img src="img/primeiro.png" alt="slide1" id="i1" class="img_car"/>
+          </div>
+
+          <div class="carrosel_imgs">
+            <img src="img/segundo.png" alt="slide1" id="i1" class="img_car"/>
+          </div>
+
+          <div class="carrosel_imgs">
+            <img src="img/terceiro.png" alt="slide1" id="i1" class="img_car"/>
+          </div>
+
+          <div class="nav_auto">
+            <div class="auto_btn1"></div>
+            <div class="auto_btn2"></div>
+            <div class="auto_btn3"></div>
+          </div>
+
+          <div class="nav_manual">
+            <label for="radio1" class="manual_btn"></label>
+            <label for="radio2" class="manual_btn"></label>
+            <label for="radio3" class="manual_btn"></label>
+          </div>
+
+        </div>
+      </section>
+
+      <!--texto de bem-vindos-->
+      <h1 id="titulo" class="kite-one-regular">Bem-Vindos!</h1>
 
       <section class="Palavras kite-one-regular">
         <div id="Texto">

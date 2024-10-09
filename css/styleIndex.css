@@ -1,37 +1,93 @@
-.carrosel_div{
-  display:flex;
-  align-items: center;
-  justify-content: center;
+/*determina o tamanho e retira margens do carrosel. Esconde a barra de rolagem horizontal*/
+section.carrosel{
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  overflow: hidden;
 }
 
+/*permite com que as imagens do carrosel ultrapasem a tela, ficando uma do lado da outra*/
+.carrosel_content{
+  width: 400%;
+  height: auto;
+  display: flex;
+}
 
-#i2,#i3{
+/*faz os inputs do carrosel desaparecerem*/
+.carrosel_content input{
   display: none;
 }
 
-.img_car{
-  width: 70em;
-  height: 20em;
-  background-size: cover;
-}
-
-
-.passar_img{
-  width: 4em;
-  height: 4em;
-  border: 0;
-  background-color: rgba(240, 248, 255, 0);
-  cursor: pointer;
-}
-
-
-#Isso {
-  font-family: "Kite One", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+/*ajusta as divs das imagens, alinha elas no centro e coloca uma transição*/
+.carrosel_imgs{
+  width: 25%;
+  height: auto;
+  position: relative;
   text-align: center;
+  transition: 1s;
 }
 
+/*faz a imagem ocupar toda a tela*/
+.carrosel_imgs img{
+  width: 100%;
+}
+
+/*deixa as bolinhas de navegações paradas, uma do lado da outra e centralizadas*/
+.nav_manual, .nav_auto{
+  position:absolute;
+  width: 100%;
+  margin-top: 35%;
+  display: flex;
+  justify-content: center;
+}
+
+/*configura as div e os label, para que fiquem com o formato de bolinhas*/
+.nav_manual .manual_btn,.nav_auto div{
+  border: 1px solid #31C1D6;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+/*separa as bolinhas uma das outras*/
+.nav_manual .manual_btn:not(:last-child), .nav_auto div:not(:last-child){
+  margin-right: 10px;
+}
+
+/* quando passa o mouse muda a cor*/
+.nav_manual .manual_btn:hover{
+  background-color: #31C1D6;
+}
+
+/*preenche a bolinha de passar os slides de acordo com radio que esta selecionado*/
+#radio1:checked ~ .nav_auto .auto_btn1, #radio2:checked ~ .nav_auto .auto_btn2, #radio3:checked ~ .nav_auto .auto_btn3{
+  background-color: #31C1D6;  
+}
+
+/*fica no primeiro slide quando o radio1 esta ativo*/
+#radio1:checked ~ .primeiro{
+  margin-left: 0%;
+}
+
+/*passa para o segundo slide quando o radio2 esta ativo*/
+#radio2:checked ~ .primeiro{
+  margin-left: -25%;
+}
+
+/*passa para o terceiro slide quando o radio3 esta ativo*/
+#radio3:checked ~ .primeiro{
+  margin-left: -50%;
+}
+
+/*mexe no "bem-vindo" tamanho font e centraliza*/
+#titulo {
+  text-align: center;
+  margin-top: 5em;
+}
+
+/*configura as letras, o espaçamento que ocupa, cor.*/
 .Palavras {
   color: black;
   width: 85%;
@@ -39,9 +95,9 @@
   margin: 5.5em
 }
 
+/*margin, tamanho e espaçamento.*/
 #Texto {
   margin: auto;
   width: 80%;
   font-size: 1.5em;
-
 }

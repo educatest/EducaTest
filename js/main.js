@@ -1,33 +1,26 @@
-var id = 1;
+//instancio radio que recebe todos os label manual_btn e um cont para passar os slides
+var radio = document.querySelector('.manual_btn');
+var cont = 1;
 
-document.getElementById("next").addEventListener("click", function () {
-  id += 1;
+//ativo o radio1 para exibir o primeiro slide
+document.getElementById('radio1').checked = true;
 
-  if (id > 3) {
-    id = 1;
+//de 7 em 7 segundos passa de slide chamando a função
+setInterval(() =>{
+  proxima_img()
+}, 7000);
+
+//função que passa slide
+function proxima_img(){
+
+  //adiciona mais um no cont para ele valer o numero do slide que deve ser exibido
+  cont ++;
+
+  //limita o cont até 3 por que é a quantidade de imagens que é exibida no carrosel
+  if(cont > 3){
+    cont = 1;
   }
 
-  for (let i = 1; i <= 3; i++) {
-    if (id == i) {
-      document.getElementById("i" + i).style.display = "flex";
-    } else {
-      document.getElementById("i" + i).style.display = "none";
-    }
-  }
-});
-
-document.getElementById("later").addEventListener("click", function () {
-  id -= 1;
-
-  if (id < 1) {
-    id = 3;
-  }
-
-  for (let i = 1; i <= 3; i++) {
-    if (id == i) {
-      document.getElementById("i" + i).style.display = "flex";
-    } else {
-      document.getElementById("i" + i).style.display = "none";
-    }
-  }
-});
+  //ativa o radio no valor do cont passando de slide
+  document.getElementById('radio' + cont).checked = true;
+}
